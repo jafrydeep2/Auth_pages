@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         sendCodeBtn.disabled = true;
         sendCodeBtn.classList.add('opacity-50', 'cursor-not-allowed');
-        sendCodeBtn.textContent = 'Code Sent';
+        sendCodeBtn.textContent = 'Код отправлен!';
         
         // if (codeSentMessage) {
         //     codeSentMessage.classList.remove('hidden');
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isValid) {
             sendCodeBtn.disabled = false;
             sendCodeBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-            sendCodeBtn.textContent = 'Send Code';
+            sendCodeBtn.textContent = 'Отправить код';
         }
     }
 
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (!validateEmail(email)) {
                 // Show error message
                 if (emailError) {
-                    emailError.textContent = "Email must be in the format exp@email.com";
+                    emailError.textContent = "Email должен быть в формате exp@email.com";
                     emailError.classList.remove('hidden');
                     emailInput.classList.add('border-red-500');
                 }
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const otpErrorMessage = document.createElement('div');
         otpErrorMessage.id = 'otpErrorMessage';
         otpErrorMessage.className = 'text-red-500 mt-2 text-center hidden';
-        otpErrorMessage.textContent = 'Incorrect code. Please try again.';
+        otpErrorMessage.textContent = 'Неправильный код...';
 
         // Add error message to DOM
         if (codeInputContainer) {
@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         otpErrorMessage.classList.add('hidden');
 
                         // Show success alert and redirect
-                        alert('OTP verified successfully! Redirecting...');
+                        alert('OTP успешно проверен! Перенаправление...');
 
                         // Simulate a redirect after a short delay
                         setTimeout(() => {
@@ -419,7 +419,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (mobileOtpError) mobileOtpError.classList.add('hidden');
 
                         // Show success alert and redirect
-                        alert('OTP verified successfully! Redirecting...');
+                        alert('OTP успешно проверен! Перенаправление...');
 
                         // Simulate a redirect after a short delay
                         setTimeout(() => {

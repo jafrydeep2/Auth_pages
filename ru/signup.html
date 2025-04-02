@@ -6,7 +6,7 @@
     <title>Sign Up</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link href="./styles/custom.css" rel="stylesheet" />
+    <link href="../styles/custom.css" rel="stylesheet" />
   </head>
   <body class="bg-gray-200 h-screen flex items-center justify-center p-4">
     <div
@@ -22,9 +22,9 @@
         class="w-full lg:w-2/5 p-8 flex flex-col justify-center md:px-[100px]"
       >
         <div id="signupForm">
-          <h1 class="text-3xl font-bold mb-4 text-gray-800">Join us today</h1>
+          <h1 class="text-3xl font-bold mb-4 text-gray-800">Присоединяйтесь к нам сегодня</h1>
           <p class="text-gray-600 mb-6">
-            Create your account
+            Создайте свой аккаунт
           </p>
 
           <form id="createAccountForm" class="mb-6">
@@ -36,7 +36,7 @@
                 class="w-full p-3 border-2 border-[#6D5EBA] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
               <div id="emailError" class="error-message hidden">
-                Please enter a valid email address
+                Пожалуйста, введите действительный адрес электронной почты
               </div>
             </div>
 
@@ -48,7 +48,7 @@
                 class="w-full p-3 border-2 border-[#6D5EBA] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
               <div id="passwordError" class="error-message hidden">
-                Password must be at least 8 characters
+                Пароль должен содержать не менее 8 символов.
               </div>
             </div>
 
@@ -57,12 +57,12 @@
               id="signUpBtn"
               class="w-full w-full hover:bg-[#A95EBA] active:bg-[#A95EBA] cursor-pointer bg-[#6D5EBA] text-white font-medium py-3 rounded-lg hover:bg-opacity-90 transition"
             >
-              Create Account
+            Зарегистрироваться
             </button>
           </form>
           <div class="relative flex py-5 items-center">
             <div class="flex-grow border-t border-gray-300"></div>
-            <span class="flex-shrink mx-4 text-gray-500">or</span>
+            <span class="flex-shrink mx-4 text-[#404040]">или</span>
             <div class="flex-grow border-t border-gray-300"></div>
           </div>
 
@@ -70,35 +70,35 @@
             <button
               class="w-full hover:bg-[#F2E6F5] font-medium text-[#404040] border-3 border-[#E3E3E3] py-2.5 rounded-lg flex items-center justify-center cursor-pointer"
             >
-              <img class="w-5 h-5 mr-2" src="./assets/images/vk.svg" />
+              <img class="w-5 h-5 mr-2" src="../assets/images/vk.svg" />
 
-              <span class="w-[170px]">Sign in with VK ID</span>
+              <span class="w-[170px]">Войти через VK ID</span>
             </button>
 
             <button
               class="w-full hover:bg-[#F2E6F5] font-medium text-[#404040] border-3 border-[#E3E3E3] py-2.5 rounded-lg flex items-center justify-center cursor-pointer"
             >
-              <img class="w-5 h-5 mr-2" src="./assets/images/google.svg" />
-              <span class="w-[170px]">Sign in with Google</span>
+              <img class="w-5 h-5 mr-2" src="../assets/images/google.svg" />
+              <span class="w-[170px]">Войти через Google</span>
             </button>
 
             <button
               class="w-full hover:bg-[#F2E6F5] font-medium text-[#404040] border-3 border-[#E3E3E3] py-2.5 rounded-lg flex items-center justify-center cursor-pointer"
             >
-              <img class="w-5 h-5 mr-2" src="./assets/images/email.svg" />
+              <img class="w-5 h-5 mr-2" src="../assets/images/email.svg" />
 
-              <span class="w-[170px]">Sign in with Password</span>
+              <span class="w-[170px]">Войти с кодом Email</span>
             </button>
           </div>
 
           <div class="text-center mt-10 font-semibold">
-            <span class="text-[#404040]">Have an account?</span>
-            <a href="index.html" class="text-[#6D5EBA] ml-1">Sign in</a>
+            <span class="text-[#404040]">Есть аккаунт?</span>
+            <a href="../ru/index.html" class="text-[#6D5EBA] ml-1">войти</a>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="./scripts/signup.js"></script>
+    <script src="../scripts-ru/signup.js"></script>
   </body>
 </html>

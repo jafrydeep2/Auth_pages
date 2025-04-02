@@ -1,5 +1,6 @@
 body {
   background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
 }
 .server-bg {
   background-image: url('../assets/images/background.svg');
@@ -43,7 +44,7 @@ body {
   margin-top: 20px;
 }
 .progress-dot {
-  width: 50px;
+  width: 90px;
   height: 6px;
   border-radius: 4px;
   background-color: #d1d5db;
@@ -51,7 +52,7 @@ body {
 }
 .progress-dot.active {
   background-color: #805ad5;
-  width: 50px;
+  width: 90px;
   border-radius: 4px;
   transform: scale(1.2);
 }
@@ -66,7 +67,7 @@ input:checked ~ div.bg-gray-200 {
 }
 
 .error-message {
-  color: #ef4444;
+  color: #FF403F;
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
